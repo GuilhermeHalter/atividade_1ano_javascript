@@ -1,0 +1,23 @@
+<script>
+    /*
+    PROBLEMA
+    Faça um script que receba o número total de eleitores de um município, o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores. 
+    */
+
+    //ENTRADA
+    const totaleleitores = Number(prompt("Total de eleitores foi de ?"))
+    const votonulo = Number(prompt("Total de votos nulos foi de ?"))
+    const votovalido = Number(prompt("Total de votos validos foi de ?"))
+    const votobranco = Number(prompt("Total de votos brancos foi de ?"))
+    //PROCESSAMENTO
+
+    const porcnulo = totaleleitores / votonulo
+    const porcbranco = totaleleitores / votobranco
+    const porcvalido = totaleleitores / votovalido
+
+    //SAÍDA
+
+    document.write(`O percentual de votos nulos foi de ${porcnulo}%, o de votos validos foi de ${porcvalido}%, e o de votos brancos foi de 
+    ${porcbranco}%`)
+
+</script>
